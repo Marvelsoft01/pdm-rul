@@ -1,0 +1,2 @@
+# Ignore large model
+outputs/rf_rul_model.joblib
