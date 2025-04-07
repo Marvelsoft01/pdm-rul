@@ -22,7 +22,7 @@ import urllib.request
 # ------------------------------
 
 MODEL_PATH = "rf_rul_model.joblib"
-MODEL_URL = "https://drive.google.com/uc?export=download&id=1uwXwLMvONA66nBuEXJZX-uy6Y0m_emPv"
+MODEL_URL = "https://drive.google.com/file/d/1uwXwLMvONA66nBuEXJZX-uy6Y0m_emPv/view?usp=sharing"
 
 if not os.path.exists(MODEL_PATH):
     st.info("📥 Downloading RUL model...")
@@ -30,6 +30,9 @@ if not os.path.exists(MODEL_PATH):
 
 # ✅ Load the trained model
 model = joblib.load(MODEL_PATH)
+
+
+
 
 # ------------------------------
 # UI + Logic
