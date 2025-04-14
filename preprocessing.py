@@ -1,3 +1,20 @@
+"""
+preprocessing.py
+
+This script handles loading and preprocessing of the CMAPSS dataset used for Remaining Useful Life (RUL) prediction.
+
+What it does:
+- Loads raw training, test, and RUL truth files from the dataset folder.
+- Removes unnecessary empty columns caused by inconsistent spacing.
+- Assigns clear column names: unit ID, cycle number, and 24 sensor measurements.
+- Computes the Remaining Useful Life (RUL) for each row in the training set.
+- Converts the RUL truth values for the test set into a DataFrame with the correct structure.
+- Saves a reusable version of the processed training data to disk for downstream use.
+- Performs sanity checks with `.head()`, `.columns`, and `.shape` to verify data loading and structure.
+
+This script is the foundation of all modeling steps and must be run before feature selection or model training.
+"""
+
 import pandas as pd
 import os
 

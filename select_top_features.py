@@ -1,3 +1,25 @@
+"""
+select_top_features.py
+
+Purpose:
+This script performs feature selection from the preprocessed training dataset 
+by identifying the top N sensor features that have the strongest correlation with RUL.
+
+Workflow:
+- Loads preprocessed training data (with computed RUL) from preprocessing.py
+- Computes Pearson correlation of each sensor with RUL
+- Selects the top N features based on absolute correlation values
+- Creates a refined training dataset including only: unit, cycle, top N sensors, and RUL
+- Saves the new dataset for model training
+
+Output:
+- dataset/df_train_selected.csv — streamlined dataset for model training
+"""
+
+
+
+# to get model training data 
+
 from preprocessing import df_train  # Ensure df_train is available
 import pandas as pd
 

@@ -1,5 +1,5 @@
 """
-🧠 What This Script Actually Does:
+What This Script Actually Does:
 Trains a baseline Random Forest model for RUL prediction
 
 Handles dynamic feature overlap between train and test sets
@@ -9,6 +9,7 @@ Aligns test data with PM_truth.txt using last cycle per engine
 Predicts RUL and evaluates using RMSE metric
 
 This is a first-pass benchmark model — useful for sanity check, speed, and feature sensitivity analysis.
+
 """
 
 import joblib
