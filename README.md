@@ -3,3 +3,6 @@ Predictive Maintenance ML model in Python for RUL prediction with Streamlit inte
 
 
 
+LIVE DEMO :
+
+https://pdm-rul-n8uhzkwccawchgzrzcwsqn.streamlit.app/
